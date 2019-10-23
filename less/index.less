@@ -50,10 +50,71 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 0 3%;
 }
 
+@h-color: firebrick;
+
+.flex{
+	display: flex;
+}
+
+.wrap {
+	flex-wrap: wrap;
+	width: 48%;
+}
+
+.styling{
+	height: 100px;
+	h3{
+	   font-size: 20px;
+	   color: @h-color;
+	   margin-bottom: 10%;
+	}
+}
+body{
+	nav {
+		.flex();
+		justify-content: center;
+	
+		a {
+			text-decoration: none;
+			padding: 2%;
+			color: darkslategray;
+		} // end a
+	} //end nav	
+	.intro{
+		.flex();
+		flex-wrap: wrap;
+		padding-bottom: 3%;
+		h1{
+			font-size: 36px;
+			width: 100%;
+			padding-bottom: 3%;
+			text-align: center;
+		}//end h1
+		p {
+			font-size: 24px;
+		} //end p
+	} //end intro
+	.mid-container{
+		.flex();
+		flex-direction: row;
+	} //end midcontainer
+	.skills{
+		.flex();
+		.wrap();
+		.styling();
+	} // end skills
+	.work{
+		.flex();
+		.wrap();
+		.styling();
+	} // end work
+} // end body
