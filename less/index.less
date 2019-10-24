@@ -50,10 +50,139 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 0 3%;
+}
+//Variables
+@h-color: rgb(34, 32, 33);
+
+//mixins
+.flex{
+	display: flex;
 }
 
+.wrap {
+	flex-wrap: wrap;
+	width: 48%;
+	justify-content: center;
+}
+
+.styling{
+	height: 30vh;
+	margin-right: 3%;
+	margin-top: 1%;
+	h3{
+	   font-size: 2rem;
+	   color: @h-color;
+	   margin-bottom: 10%;
+	   text-align: center;
+	   padding-top: 2vh;
+	} //end h3
+	@media (max-width: 500px){
+		width: 100%;
+		margin: 2% 0;
+	}
+}
+
+.line-styling {
+	font-size: 1.5rem;
+	padding: 2vh;
+}
+
+.background{
+	background-color: #cccccc;
+	background-image: linear-gradient(red, yellow);
+}
+
+//My code begins here
+body{
+	background-color: rgba(3, 3, 3, 0.726);
+	nav {
+		.flex();
+		justify-content: center;
+
+		
+		a {
+			text-decoration: none;
+			padding: 2%;
+			color: rgb(0, 0, 0);
+			font-size: 30px;
+
+			@media (max-width: 500px){
+				font-size: 1.5rem;
+			} // end mobile
+		} // end a
+	} //end nav	
+	.intro{
+		.flex();
+		flex-wrap: wrap;
+		padding-bottom: 3%;
+		height: 50vh;
+		justify-content: center;
+		.background();
+
+		@media (max-width: 500px){
+			height: 40vh;
+			width: 100%;
+			padding-top: 10%;
+			flex-direction: column;
+			justify-content: flex-start;
+		} //end media
+
+		h1{
+			font-size: 36px;
+			width: 100%;
+			padding-top: 10%;
+			text-align: center;
+			@media (max-width: 500px){
+				
+			}
+		}//end h1
+		p {
+			font-size: 24px;
+			@media (max-width: 500px){
+				padding: 10%;
+			}
+		} //end p
+	} //end intro
+	.mid-container{
+		.flex();
+		flex-direction: row;
+		@media (max-width: 500px){
+			flex-direction: column;
+		}
+	} //end midcontainer
+	.skills{
+		.flex();
+		.wrap();
+		.styling();
+		.background();
+		li{
+			.line-styling();
+		}
+	} // end skills
+	.work{
+		.flex();
+		.wrap();
+		.styling();
+		.background();
+		li{
+			.line-styling();
+		}
+	} // end work
+	.contact{
+		.flex();
+		.wrap();
+		.styling();
+		.background();
+		li{
+			.line-styling();
+		}
+		margin-right: 0;
+	}
+} // end body

@@ -1,1 +1,315 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 3%;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+  width: 48%;
+  justify-content: center;
+}
+.styling {
+  height: 30vh;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+.styling h3 {
+  font-size: 2rem;
+  color: #222021;
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 2vh;
+}
+@media (max-width: 500px) {
+  .styling {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+.line-styling {
+  font-size: 1.5rem;
+  padding: 2vh;
+}
+.background {
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+body {
+  background-color: rgba(3, 3, 3, 0.726);
+}
+body nav {
+  display: flex;
+  justify-content: center;
+}
+body nav a {
+  text-decoration: none;
+  padding: 2%;
+  color: #000000;
+  font-size: 30px;
+}
+@media (max-width: 500px) {
+  body nav a {
+    font-size: 1.5rem;
+  }
+}
+body .intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
+  height: 50vh;
+  justify-content: center;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+@media (max-width: 500px) {
+  body .intro {
+    height: 40vh;
+    width: 100%;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+body .intro h1 {
+  font-size: 36px;
+  width: 100%;
+  padding-top: 10%;
+  text-align: center;
+}
+body .intro p {
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  body .intro p {
+    padding: 10%;
+  }
+}
+body .mid-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  body .mid-container {
+    flex-direction: column;
+  }
+}
+body .skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  justify-content: center;
+  height: 30vh;
+  margin-right: 3%;
+  margin-top: 1%;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+body .skills h3 {
+  font-size: 2rem;
+  color: #222021;
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 2vh;
+}
+@media (max-width: 500px) {
+  body .skills {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+body .skills li {
+  font-size: 1.5rem;
+  padding: 2vh;
+}
+body .work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  justify-content: center;
+  height: 30vh;
+  margin-right: 3%;
+  margin-top: 1%;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+body .work h3 {
+  font-size: 2rem;
+  color: #222021;
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 2vh;
+}
+@media (max-width: 500px) {
+  body .work {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+body .work li {
+  font-size: 1.5rem;
+  padding: 2vh;
+}
+body .contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  justify-content: center;
+  height: 30vh;
+  margin-right: 3%;
+  margin-top: 1%;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+  margin-right: 0;
+}
+body .contact h3 {
+  font-size: 2rem;
+  color: #222021;
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 2vh;
+}
+@media (max-width: 500px) {
+  body .contact {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+body .contact li {
+  font-size: 1.5rem;
+  padding: 2vh;
+}
